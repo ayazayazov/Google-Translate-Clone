@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Translate Clone</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerLeftSide">
+            <button class="mainMenuBtn" id="mainMenuBtn"><img src="./icons/hamburgerMenu.svg" alt=""></button>
+            <a class="logo"><img src="./icons/GoogleTranslateLogo.png" alt="">Clone</a>
+        </div>
+        <div class="headerRightSide">
+            <button class="settingsBtn" id="settingsBtn"><img src="./icons/settings.svg" alt=""></button>
+            <button class="googleAppsBtn" id="googleAppsBtn"><img src="./icons/apps.png" alt=""></button>
+            <button class="acountBtn" id="acountBtn"><img src="./icons/profile.png" alt=""></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="sourceLangBox">
+                <div class="sourceLangs">
+                    <div id="sourceLangsBox" class="langsBox">
+                        <button value="en" id="sourcelangBtn1" class="langBtn">English</button>
+                        <button value="az" id="sourcelangBtn2" class="langBtn">Azerbaijani</button>
+                        <button value="ru" id="sourcelangBtn3" class="langBtn">Russian</button>
+                        <button value="tr" id="sourcelangBtn4" class="langBtn">Turkish</button>
+                    </div>
+                    <select class="selectLangOption" name="" id="selectSourceLangOption">
+                        <option value="select">Select Language</option>
+                        <option value="ar">Arabic</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="it">Italian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="es">Spanish</option>
+                        <option value="uk">Ukrainian</option>
+                    </select>
+                </div>
+                <div class="sourceInputBox">
+                    <textarea class="sourceInput" name="" id="sourceInput" cols="0" rows="0"></textarea>
+                </div>
+            </div>
+            <div class="targetLangBox">
+                <div class="targetLangs">
+                    <div id="targetLangsBox" class="langsBox">
+                        <button value="en" id="targetlangBtn1" class="langBtn">English</button>
+                        <button value="az" id="targetlangBtn2" class="langBtn">Azerbaijani</button>
+                        <button value="ru" id="targetlangBtn3" class="langBtn">Russian</button>
+                        <button value="tr" id="targetlangBtn4" class="langBtn">Turkish</button>
+                    </div>
+                    <select class="selectLangOption" name="" id="selectTargetLangOption">
+                        <option value="select">Select Language</option>
+                        <option value="ar">Arabic</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="it">Italian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="es">Spanish</option>
+                        <option value="uk">Ukrainian</option>
+                    </select>
+                </div>
+                <div class="targetInputBox">
+                    <p id="output" class="output">Translation</p>
+                </div>
+            </div>
+        </div>
+        <button onclick="translateBtn()" class="translateBtn">Translate</button>
+
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
