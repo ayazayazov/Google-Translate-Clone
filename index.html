@@ -22,6 +22,8 @@
     </header>
 
     <main>
+        <div id="sourceLangsSelectBox" class="langsSelectBox"></div>
+        <div id="targetLangsSelectBox" class="langsSelectBox"></div>
         <div class="container">
             <div class="sourceLangBox">
                 <div class="sourceLangs">
@@ -31,7 +33,7 @@
                         <button value="ru" id="sourcelangBtn3" class="langBtn">Russian</button>
                         <button value="tr" id="sourcelangBtn4" class="langBtn">Turkish</button>
                     </div>
-                    <select class="selectLangOption" name="" id="selectSourceLangOption">
+                    <!-- <select class="selectLangOption" name="" id="selectSourceLangOption">
                         <option value="select">Select Language</option>
                         <option value="ar">Arabic</option>
                         <option value="fr">French</option>
@@ -42,7 +44,15 @@
                         <option value="pt">Portuguese</option>
                         <option value="es">Spanish</option>
                         <option value="uk">Ukrainian</option>
-                    </select>
+                    </select> -->
+                    <button onclick="sourceShowMoreBTN()" id="sourceShowMoreBtn" class="showMoreBtn"><svg fill="#5f6367"
+                            width="20" height="20" viewBox="0 0 24 24" focusable="false">
+                            <path d="M5.41 7.59L4 9l8 8 8-8-1.41-1.41L12 14.17"></path>
+                        </svg></button>
+                    <!-- <div id="langsSelectBox" class="langsSelectBox">
+                        <button value="ar">Arabic</button>
+                    </div> -->
+
                 </div>
                 <div class="sourceInputBox">
                     <textarea class="sourceInput" name="" id="sourceInput" cols="0" rows="0"></textarea>
@@ -56,7 +66,7 @@
                         <button value="ru" id="targetlangBtn3" class="langBtn">Russian</button>
                         <button value="tr" id="targetlangBtn4" class="langBtn">Turkish</button>
                     </div>
-                    <select class="selectLangOption" name="" id="selectTargetLangOption">
+                    <!-- <select class="selectLangOption" name="" id="selectTargetLangOption">
                         <option value="select">Select Language</option>
                         <option value="ar">Arabic</option>
                         <option value="fr">French</option>
@@ -67,7 +77,11 @@
                         <option value="pt">Portuguese</option>
                         <option value="es">Spanish</option>
                         <option value="uk">Ukrainian</option>
-                    </select>
+                    </select> -->
+                    <button onclick="targetShowMoreBTN()" id="targetShowMoreBtn" class="showMoreBtn"><svg fill="#5f6367"
+                            width="20" height="20" viewBox="0 0 24 24" focusable="false">
+                            <path d="M5.41 7.59L4 9l8 8 8-8-1.41-1.41L12 14.17"></path>
+                        </svg></button>
                 </div>
                 <div class="targetInputBox">
                     <p id="output" class="output">Translation</p>

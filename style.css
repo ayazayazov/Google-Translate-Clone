@@ -48,7 +48,7 @@ button {
     background-color: transparent;
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 970px) {
     .container{
         flex-wrap: wrap;
     }
@@ -121,6 +121,7 @@ main{
     flex-direction: column;
     gap: 20px;
     padding: 0 80px;
+    position: relative;
 }
 
 .translateBtn{
@@ -145,7 +146,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 14px;
+    gap: 12px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -190,6 +191,9 @@ main{
 
 .sourceLangs{
     display: flex;
+    align-items: center;
+    /* height: 100%; */
+    /* position: relative; */
 }
 
 .targetLangs{
@@ -232,6 +236,69 @@ main{
 .selectLangOption:hover{
     background-color: #f5f5f5;
     color: #000
+}
+
+.showMoreBtn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.showMoreBtn::after {
+    content: "";
+    background: #a8a8a8;
+    border-radius: 20px;
+    position: absolute;
+    padding-top: 100%;
+    padding-left: 100%;
+    opacity: 0;
+    transition: all 400ms
+}
+
+.showMoreBtn:active::after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.showMoreBtn:hover{
+    background-color: #f5f5f5;
+}
+
+.langsSelectBox{
+    /* display: none; */
+    /* width: 200%; */
+    /* height: 100%; */
+    display: flex;
+    background-color: #fff;
+    position: absolute;
+    top: 106px;
+    left: 0px;
+    border: 1px solid #e0e0e0;
+    margin: 0 80px;
+    border-radius: 8px;
+    padding: 6px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.langsSelectBox button{
+    width: 154px;
+    padding: 9px 0 9px 9px;
+    font-size: 15px;
+    color: #000000de;
+    font-weight: 300;
+    text-align: start;
+}
+
+.langsSelectBox button:hover{
+    background-color: #f5f5f5;
 }
 
 /* MAIN */
