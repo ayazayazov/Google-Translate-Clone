@@ -178,9 +178,9 @@ targetLangsSelectBox.addEventListener('click', (e)=>{
     if(sourceSelect === e.target.value){
         console.log('same langauge!!!');
         // translateBTN.disabled = true
-        targetSelect = sourcelangBtn2.value
-        targetlangBtn1.style.color = '#1966d2'
-        targetlangBtn1.style.borderBottom = '2px solid #1966d2'
+        targetSelect = targetlangBtn2.value
+        targetlangBtn2.style.color = '#1966d2'
+        targetlangBtn2.style.borderBottom = '2px solid #1966d2'
         targetLangsSelectBox.style.display = 'none'
         targetShowMoreBtn.style.transform = 'rotate(0deg)'
         return
@@ -367,7 +367,7 @@ function targetShowMoreBTN(){
 
 async function getMoreLangs(){
     let result = await getLanguages()
-    result = result.filter((e) => e.code != 'hy')
+    // result = result.filter((e) => e.code != 'hy')
     sourceLangsSelectBox.innerHTML = result.map((e)=>{
         return `
         <button value="${e.code}">${e.name}</button>
