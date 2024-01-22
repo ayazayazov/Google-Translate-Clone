@@ -104,6 +104,7 @@ sourceLangsSelectBox.addEventListener('click', (e)=>{
         sourceShowMoreBtn.style.transform = 'rotate(0deg)'
         return
     }
+    sourceSelect = sourcelangBtn1.value
     sourcelangBtn1.style.color = '#1966d2'
     sourcelangBtn1.style.borderBottom = '2px solid #1966d2'
     sourceLangsSelectBox.style.display = 'none'
@@ -184,6 +185,7 @@ targetLangsSelectBox.addEventListener('click', (e)=>{
         targetShowMoreBtn.style.transform = 'rotate(0deg)'
         return
     }
+    targetSelect = targetlangBtn1.value
     targetlangBtn1.style.color = '#1966d2'
     targetlangBtn1.style.borderBottom = '2px solid #1966d2'
     targetLangsSelectBox.style.display = 'none'
