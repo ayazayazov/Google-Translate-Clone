@@ -48,9 +48,48 @@ button {
     background-color: transparent;
 }
 
+@media only screen and (min-width: 970px) {
+    .headerRightSide{
+        display: flex;
+    }
+}
+
 @media only screen and (max-width: 970px) {
     .container{
         flex-wrap: wrap;
+    }
+    .headerRightSide{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .showMoreBtn{
+        margin-left: 28px;
+    }
+    .headerRightSide{
+        display: none;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .mainResponsive{
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .showMoreBtn{
+        margin-left: 0px;
+    }
+    .headerRightSide{
+        display: none;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .mainResponsive{
+        padding: 0 10px;
     }
 }
 
@@ -93,7 +132,6 @@ header{
 }
 
 .headerRightSide{
-    display: flex;
     align-items: center;
     gap: 8px;
 }
@@ -192,8 +230,6 @@ main{
 .sourceLangs{
     display: flex;
     align-items: center;
-    /* height: 100%; */
-    /* position: relative; */
 }
 
 .targetLangs{
@@ -273,9 +309,7 @@ main{
 }
 
 .langsSelectBox{
-    /* display: none; */
-    /* width: 200%; */
-    /* height: 100%; */
+    z-index: 1;
     display: flex;
     background-color: #fff;
     position: absolute;
